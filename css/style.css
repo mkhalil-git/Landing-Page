@@ -16,12 +16,13 @@
 
     .container{
         width: 75%;
+        height: inherit;
         margin: 0 auto;
     }
 
     .hero{
         background-color: #1f2937;
-        height: 420px;
+        height: 450px;
         color: #F9FAF8;
         
     }
@@ -33,20 +34,19 @@
     }
 
 
-    .hero .logo{
-       
+    .hero .logo{       
         font-size: 24px;        
     }
     .hero .nav{
-        display: flex;  
-        
+        display: flex;     
         
     }
     .hero .nav{
         list-style: none;
     }
     .hero .nav a{
-        padding:5px;         
+        padding:5px;   
+        cursor: pointer;      
         font-size: 14px;
     }
      .hero .nav a:hover{                
@@ -55,7 +55,8 @@
 
     /* main Section style */
     .hero .main{
-        margin: 10% 0;
+        /* margin: 10% 0; */
+        height: 80%;
         display: flex;
         align-items: center; 
         justify-content: space-between;       
@@ -70,12 +71,12 @@
     }
 
     .hero img{
-        width: 350;
+        max-width: 350;
         height: 200px;  
         float: right;      
     }
 
-    .hero .info input{
+    .hero .info input[TYPE=button]{
         width:80px;
         padding: 2px;
         margin:10px 0;
@@ -95,7 +96,7 @@
     margin: 0 auto;
 }*/
 .random-info h2{
- margin: 36px 0;
+ margin: 48px 0;
  font-size: 32px;
  font-weight: bold;
  color: #1f2937;
@@ -118,22 +119,71 @@
     margin-top: 15px;
     height: 20%;
     overflow: hidden; 
-     white-space: wrap;  
-   text-overflow:ellipsis;
+    white-space: wrap;  
+    text-overflow:ellipsis;
 }
 
 /* qoute section*/
 .qoute-Section {
+   
     background-color: #E5E7EB;
-    text-align: center;  
-    height: 300px;
-    align-items: center;
+    padding: 52px 15%;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
 }
 
-.qoute-Section .qoute{
-      margin: 30px 0;
+.qoute-Section .qoute{      
+      text-align: center;
       font-size: 36px;
-      color: #1f2937;
-
+      color: #1f2937;      
       font-style: italic;
+}
+
+.qoute-Section .author{
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Call to action */
+.call-action{
+    background-color: #3882F6;
+    width: 70%;
+    height: 100px;    
+    margin: 62px auto;    
+    border-radius: 10px;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px; 
+}
+
+.call-action input[type=button]{
+    width: 158px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: inherit;
+    border: 2px solid #F9FAF8;
+    color: #F9FAF8;
+    height: 38px;
+    font-weight: 600;
+    
+}
+.call-action input[type=button]:hover{
+    background-color: #F9FAF8;
+    color: #1f2937;
+}
+
+
+/*  Footer Section */
+.footer{
+    background-color: #1f2937;
+    height: 50px;       
+    color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
